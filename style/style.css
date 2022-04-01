@@ -1,20 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
-* {
+body {
+  width: 1600px;
   margin: 0 auto;
   padding: 0;
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
 }
 
-a {
-  text-decoration: none;
+ul, p {
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  height: 75px;
-  width: 1600px;
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,16 +24,21 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 231px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.header_desktop-size {
+  height: 75px;
+  width: 1600px;
+  padding: 0 231px;
+}
+
+.header_collor {
   background: #222222;
 }
 
-.logo_search {
-  height: 38px;
-  width: 111px;
-  margin: 0;
+.header__icons-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +50,17 @@ header {
           align-items: flex-end;
 }
 
-a .logo:hover {
+.header__icons-block_size-for-two {
+  height: 38px;
+  width: 111px;
+}
+
+.header__icons-block_size-for-three {
+  height: 37px;
+  width: 168px;
+}
+
+.header__logo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -57,38 +72,23 @@ a svg:hover #cart {
   fill: #918a8a;
 }
 
-.menu_user_card {
-  height: 37px;
-  width: 168px;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-nav {
+.nav {
   display: none;
 }
 
-.preview {
+.brand {
   width: 1600px;
   height: 764px;
   background-color: #F1E4E6;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.preview > div {
-  position: absolute;
-  width: 405px;
-  height: 93.1px;
-  left: 864px;
-  top: 364.9px;
+.brand__description {
   text-transform: uppercase;
   border-left: 12px solid #F16D7F;
   font-family: 'Lato';
@@ -98,14 +98,18 @@ nav {
   line-height: 38px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.brand__description_size {
+  width: 405px;
   padding-left: 16px;
 }
 
-.preview > div > .red {
+.brand__description_red {
   color: #F16D7F;
 }
 
-.preview > div > .bold {
+.brand__description_bold {
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
@@ -118,7 +122,7 @@ nav {
           box-sizing: border-box;
 }
 
-.discounts > ul {
+.discounts__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,19 +131,20 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   height: 470px;
   width: 1140px;
 }
 
-.discounts > ul > li {
-  margin: 0;
+.discounts__item {
   position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.discounts > ul > li > .blackout {
+.discounts__item__blackout {
+  display: none;
   position: absolute;
   height: 260px;
   width: 360px;
@@ -159,7 +164,7 @@ nav {
           justify-content: center;
 }
 
-.discounts > ul > li > .blackout > .blackout_info {
+.discounts__item__blackout_info {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -168,7 +173,7 @@ nav {
   color: #fff;
 }
 
-.discounts > ul > li > .blackout > .blackout_type {
+.discounts__item__blackout_type {
   font-size: 24px;
   font-weight: 700;
   line-height: 29px;
@@ -177,16 +182,12 @@ nav {
   color: #F16D7F;
 }
 
-.discounts > ul > li > .accesories {
+.discounts__item__blackout_accesories {
   height: 180px;
   width: 1140px;
 }
 
-.discounts > ul > li > li:first-child {
-  margin-bottom: 26px;
-}
-
-.discounts > ul > li:hover .blackout {
+.discounts__item:hover .discounts__item__blackout {
   display: none;
 }
 

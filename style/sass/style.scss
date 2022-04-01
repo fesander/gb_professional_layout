@@ -1,41 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
-* {
+$dark-bg: #222222;
+$rose-bg: #F1E4E6;
+$light-red: #F16D7F;
+
+body {
+    width: 1600px;
     margin: 0 auto;
     padding: 0;
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
 }
 
-a {
-    text-decoration: none;
+ul,p {
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    height: 75px;
-    width: 1600px;
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 231px;
     box-sizing: border-box;
 
-    background: #222222;
-}
+    &_desktop-size {
+        height: 75px;
+        width: 1600px;
+        padding: 0 231px;
+    }
 
-.logo_search {
-    height: 38px;
-    width: 111px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
+    &_collor {
+        background: $dark-bg;
+    }
 
-a .logo:hover {
-    transform: scale(1.1);
+    &__icons-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &_size-for-two {
+            height: 38px;
+            width: 111px;
+        }
+
+        &_size-for-three {
+            height: 37px;
+            width: 168px;
+        }
+    }
+
+    &__logo:hover {
+        transform: scale(1.1);
+    }
 }
 
 a svg:hover #search,
@@ -45,47 +63,37 @@ a svg:hover #cart {
     fill: #918a8a
 }
 
-.menu_user_card {
-    height: 37px;
-    width: 168px;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-nav {
+.nav {
     display: none;
 }
 
-.preview {
+.brand {
     width: 1600px;
     height: 764px;
-    background-color: #F1E4E6;
-    position: relative;
+    background-color: $rose-bg;
+    display: flex;
+    align-items: center;
 
-    &>div {
-        position: absolute;
-        width: 405px;
-        height: 93.1px;
-        left: 864px;
-        top: 364.9px;
+    &__description {
         text-transform: uppercase;
-        border-left: 12px solid #F16D7F;
+        border-left: 12px solid $light-red;
         font-family: 'Lato';
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
         line-height: 38px;
         box-sizing: border-box;
-        padding-left: 16px;
 
-        &>.red {
-            color: #F16D7F;
-
+        &_size {
+            width: 405px;
+            padding-left: 16px;
         }
 
-        &>.bold {
+        &_red {
+            color: $light-red;
+        }
+
+        &_bold {
             font-weight: 900;
             font-size: 48px;
             line-height: 58px;
@@ -98,65 +106,59 @@ nav {
     padding: 64px 230px;
     box-sizing: border-box;
 
-    &>ul {
+    &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: stretch;
+        align-content: space-between;
         height: 470px;
         width: 1140px;
+    }
 
-        &>li {
-            margin: 0;
-            position: relative;
+    &__item {
+        position: relative;
+        box-sizing: border-box;
 
-            &>.blackout {
-                position: absolute;
-                height: 260px;
-                width: 360px;
-                top: 0;
-                left: 0;
-                background: rgba(33, 22, 22, 0.7);
-                font-family: Lato;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
+        &__blackout {
+            display: none;
+            position: absolute;
+            height: 260px;
+            width: 360px;
+            top: 0;
+            left: 0;
+            background: rgba(33, 22, 22, 0.7);
+            font-family: Lato;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
-
-                &>.blackout_info {
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 19px;
-                    letter-spacing: 0em;
-                    text-align: center;
-                    color: #fff;
-
-                }
-
-                &>.blackout_type {
-                    font-size: 24px;
-                    font-weight: 700;
-                    line-height: 29px;
-                    letter-spacing: 0em;
-                    text-align: center;
-                    color: #F16D7F;
-                }
+            &_info {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #fff;
             }
 
-            &>.accesories {
+            &_type {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 29px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: $light-red;
+            }
+
+            &_accesories {
                 height: 180px;
                 width: 1140px;
 
             }
+        }
 
-            &>li:first-child {
-                margin-bottom: 26px;
-            }
-
-            &:hover .blackout {
-                display: none;
-            }
-
+        &:hover &__blackout {
+            display: none;
         }
     }
 }
@@ -238,7 +240,7 @@ nav {
                     line-height: 19px;
                     letter-spacing: 0em;
                     text-align: left;
-                    color: #F16D7F;
+                    color: $light-red;
                 }
             }
 
@@ -288,7 +290,7 @@ nav {
         background-color: #fff;
 
         &:hover {
-            background-color: #F16D7F;
+            background-color: $light-red;
             color: #fff;
         }
     }

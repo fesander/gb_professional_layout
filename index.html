@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style/normalize.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo_search">
-            <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+    <header class="header header_desktop-size header_collor">
+        <div class="header__icons-block header__icons-block_size-for-two">
+            <a href="#"><img src="img/logo.png" alt="logo" class="header__logo"></a>
             <a href="#">
                 <svg width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg"
                     enable-background="new 0 0 30 30">
@@ -22,7 +23,7 @@
                 </svg>
             </a>
         </div>
-        <div class="menu_user_card">
+        <div class="header__icons-block header__icons-block_size-for-three">
             <a href="#">
                 <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg"
                     enable-background="new 0 0 30 30">
@@ -49,10 +50,10 @@
 
             </a>
         </div>
-        <nav>
-            <ul class="topmenu">
+        <nav class="nav">
+            <ul class="nav__list">
                 <li><a href="#">Man</a>
-                    <ul class="submenu">
+                    <ul class="nav__sublist">
                         <li><a href="#">Accessories</a></li>
                         <li><a href="#">Bags</a></li>
                         <li><a href="#">Demin</a></li>
@@ -60,7 +61,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Woman</a>
-                    <ul class="submenu">
+                    <ul class="nav__sublist">
                         <li><a href="#">Accessories</a></li>
                         <li><a href="#">Jackets & Coats</a></li>
                         <li><a href="#">Polos</a></li>
@@ -69,7 +70,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Kids</a>
-                    <ul class="submenu">
+                    <ul class="nav__sublist">
                         <li><a href="#">Accessories</a></li>
                         <li><a href="#">Jackets & Coats</a></li>
                         <li><a href="#">Polos</a></li>
@@ -83,38 +84,38 @@
     </header>
 
     <main>
-        <section class="preview">
-            <img src="img/preview_img.png" alt="preview picture" class="preview_img">
-            <div><span class="bold">The brand</span> of&nbspluxerious&nbsp<span class="red">fassion</span></div>
+        <section class="brand">
+            <img src="img/preview_img.png" alt="preview picture" class="brand__img">
+            <div class="brand__description brand__description_size"><span class="brand__description_bold">The brand</span> of&nbspluxerious&nbsp<span class="brand__description_red">fassion</span></div>
         </section>
         <section class="discounts">
-            <ul>
-                <li>
+            <ul class="discounts__list">
+                <li class="discounts__item">
                     <a href="#"><img src="img/woman_discount.jpg" alt="discounts for woman"></a>
-                    <div class="blackout">
-                        <p class="blackout_info">30% OFF</p>
-                        <p class="blackout_type">FOR WOMEN</p>
+                    <div class="discounts__item__blackout">
+                        <p class="discounts__item__blackout_info">30% OFF</p>
+                        <p class="discounts__item__blackout_type">FOR WOMEN</p>
                     </div>
                 </li>
-                <li>
+                <li class="discounts__item">
                     <a href="#"><img src="img/man_discount.jpg" alt="discount for man"></a>
-                    <div class="blackout">
-                        <p class="blackout_info">HOT DEAL</p>
-                        <p class="blackout_type">FOR MEN</p>
+                    <div class="discounts__item__blackout">
+                        <p class="discounts__item__blackout_info">HOT DEAL</p>
+                        <p class="discounts__item__blackout_type">FOR MEN</p>
                     </div>
                 </li>
-                <li>
+                <li class="discounts__item">
                     <a href="#"><img src="img/kids_discount.jpg" alt="dicsonts for kids"></a>
-                    <div class="blackout">
-                        <p class="blackout_info">NEW ARRIVALS</p>
-                        <p class="blackout_type">FOR KIDS</p>
+                    <div class="discounts__item__blackout">
+                        <p class="discounts__item__blackout_info">NEW ARRIVALS</p>
+                        <p class="discounts__item__blackout_type">FOR KIDS</p>
                     </div>
                 </li>
-                <li>
+                <li class="discounts__item">
                     <a href="#"><img src="img/accesories_discount.jpg" alt="accesories discount"></a>
-                    <div class="blackout accesories">
-                        <p class="blackout_info">LUXIROUS & TRENDY</p>
-                        <p class="blackout_type">ACCESORIES</p>
+                    <div class="discounts__item__blackout discounts__item__blackout_accesories">
+                        <p class="discounts__item__blackout_info">LUXIROUS & TRENDY</p>
+                        <p class="discounts__item__blackout_type">ACCESORIES</p>
                     </div>
                 </li>
             </ul>
