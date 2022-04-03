@@ -8,6 +8,7 @@ body {
     width: 1600px;
     margin: 0 auto;
     padding: 0;
+    background: #E5E5E5;
 }
 
 ul {
@@ -56,7 +57,33 @@ a {
         }
 
         &>a:hover #header-item {
-            fill: #918a8a
+            fill: #918a8a;
+        }
+
+    }
+
+    .cart {
+        position: relative;
+
+        &__items {
+            display: none;
+            position: absolute;
+            height: 19px;
+            width: 19px;
+            border-radius: 50%;
+            background-color: $light-red;
+            top: -7px;
+            right: -8px;
+            font-family: Lato;
+            font-size: 12px;
+            font-weight: 400;
+            color: #fff;
+
+            &_display {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 
@@ -65,8 +92,87 @@ a {
     }
 }
 
+
+
+main {
+    position: relative;
+}
+
 .nav {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 764px;
+    width: 232px;
+    background-color: #fff;
+    box-shadow: -12px 12px 85px rgba(0, 0, 0, 0.5);
+    padding: 16px 17px 16px 34px;
+    box-sizing: border-box;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+
+    & a:hover {
+        color: $dark-bg;
+    }
+
+    &-close {
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        background-image: url("../../img/cross.png");
+        background-size: auto;
+        border: none;
+        float: right;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__title {
+        margin: 21px 0 0 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__list {
+        margin-top: 24px;
+
+        &__item {
+            margin: 0 0 20px 0;
+        }
+
+        &__title {
+            text-transform: uppercase;
+            color: $light-red;
+        }
+    }
+
+    &__sublist {
+        padding-left: 22px;
+
+        &__item {
+            margin: 11px 0 0 0;
+
+            &>a {
+                color: #6F6E6E;
+            }
+
+            &:first-child {
+                margin: 12px 0 0 0;
+            }
+        }
+    }
+
+
+}
+
+.nav-show {
+    display: block;
 }
 
 .brand {
@@ -107,6 +213,7 @@ a {
     width: 1600px;
     padding: 64px 230px;
     box-sizing: border-box;
+    background-color: #fff;
 
     &__list {
         display: flex;
@@ -170,11 +277,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #fff;
 
     &_size {
         width: 1600px;
-        margin-bottom: 95px;
-        padding: 0 230px;
+        padding: 0 230px 95px 230px;
     }
 
     &_title {

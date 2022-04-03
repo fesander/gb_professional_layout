@@ -3,6 +3,7 @@ body {
   width: 1600px;
   margin: 0 auto;
   padding: 0;
+  background: #E5E5E5;
 }
 
 ul {
@@ -69,13 +70,122 @@ a {
   fill: #918a8a;
 }
 
+.header .cart {
+  position: relative;
+}
+
+.header .cart__items {
+  display: none;
+  position: absolute;
+  height: 19px;
+  width: 19px;
+  border-radius: 50%;
+  background-color: #F16D7F;
+  top: -7px;
+  right: -8px;
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.header .cart__items_display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header__logo:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
+main {
+  position: relative;
+}
+
 .nav {
   display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 764px;
+  width: 232px;
+  background-color: #fff;
+  -webkit-box-shadow: -12px 12px 85px rgba(0, 0, 0, 0.5);
+          box-shadow: -12px 12px 85px rgba(0, 0, 0, 0.5);
+  padding: 16px 17px 16px 34px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.nav a:hover {
+  color: #222222;
+}
+
+.nav-close {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  background-image: url("../../img/cross.png");
+  background-size: auto;
+  border: none;
+  float: right;
+}
+
+.nav-close:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.nav__title {
+  margin: 21px 0 0 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nav__list {
+  margin-top: 24px;
+}
+
+.nav__list__item {
+  margin: 0 0 20px 0;
+}
+
+.nav__list__title {
+  text-transform: uppercase;
+  color: #F16D7F;
+}
+
+.nav__sublist {
+  padding-left: 22px;
+}
+
+.nav__sublist__item {
+  margin: 11px 0 0 0;
+}
+
+.nav__sublist__item > a {
+  color: #6F6E6E;
+}
+
+.nav__sublist__item:first-child {
+  margin: 12px 0 0 0;
+}
+
+.nav-show {
+  display: block;
 }
 
 .brand {
@@ -122,6 +232,7 @@ a {
   padding: 64px 230px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #fff;
 }
 
 .discounts__list {
@@ -206,12 +317,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #fff;
 }
 
 .featured-items_size {
   width: 1600px;
-  margin-bottom: 95px;
-  padding: 0 230px;
+  padding: 0 230px 95px 230px;
 }
 
 .featured-items_title {
