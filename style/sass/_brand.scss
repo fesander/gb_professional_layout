@@ -1,0 +1,35 @@
+@import "_variables.scss";
+
+.brand {
+    width: 1600px;
+    height: 764px;
+    background-color: $rose-bg;
+    display: flex;
+    align-items: center;
+
+    &__description {
+        text-transform: uppercase;
+        border-left: 12px solid $light-red;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38px;
+        box-sizing: border-box;
+
+        &--size {
+            width: 405px;
+            padding-left: 16px;
+            margin-left: 63px;
+        }
+
+        &--red {
+            color: $light-red;
+        }
+
+        &--bold {
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 58px;
+        }
+    }
+}
