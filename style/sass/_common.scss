@@ -1,5 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 @import "_variables.scss";
+
+html {
+    height: 100%;
+}
 
 body {
     width: 1600px;
@@ -7,6 +11,22 @@ body {
     padding: 0;
     background: #E5E5E5;
     font-family: Lato;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    flex: 0 0 auto;
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: #fff;
+}
+
+footer {
+    flex: 0 0 auto;
 }
 
 ul {
@@ -31,4 +51,10 @@ a {
 .title-hidden {
     visibility: hidden;
     position: absolute;
+}
+
+input[type="radio"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 }
