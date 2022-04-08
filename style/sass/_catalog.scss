@@ -1,0 +1,15 @@
+.catalog {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1140px;
+        margin-bottom: 31.5px;
+    }
+}

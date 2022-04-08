@@ -1,0 +1,38 @@
+.page-title {
+    height: 148px;
+    width: 1600px;
+    background-color: #F8F3F4;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    color: #636363;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+    &>h2 {
+        color: #F16D7F;
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        color: #636363;
+        margin-right: 10px;
+        margin-left: 10px;
+    
+        &--active {
+            color: #F16D7F;
+            font-weight: 700;
+        }
+
+        &:hover {
+            color: #F16D7F;
+        }
+    }
+}

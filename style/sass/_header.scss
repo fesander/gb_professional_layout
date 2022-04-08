@@ -45,7 +45,7 @@
 
     }
 
-    .cart {
+    .cart-icon {
         position: relative;
 
         &__items {
@@ -55,7 +55,7 @@
             width: 19px;
             border-radius: 50%;
             background-color: $light-red;
-            top: -7px;
+            top: 0px;
             right: -8px;
             font-size: 12px;
             font-weight: 400;
