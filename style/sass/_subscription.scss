@@ -1,0 +1,111 @@
+@import "_variables.scss";
+
+.subsctiption {
+    height: 448px;
+    width: 1600px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    background: url("../../img/form_bg.jpg"), rgba(244, 244, 244, 0.7);
+    background-blend-mode: overlay;
+
+    &__review {
+        width: 430px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        height: 96px;
+        width: 96px;
+    }
+
+    &__blockquote {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+
+    }
+
+    &__subscribe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 62px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+
+        &--bold {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 38px;
+        }
+    }
+
+    &__form {
+        height: 49px;
+        width: 456px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__input {
+        height: 49px;
+        width: 256px;
+        border-radius: 25px 0 0 25px;
+        background-color: #E1E1E1;
+        border: none;
+        padding: 0 22px;
+        line-height: 52px;
+        outline: none;
+        box-sizing: border-box;
+
+        &:hover {
+            outline: 1px solid $dark-bg;
+            height: 44px;
+        }
+        
+        &:focus {
+            outline: 1px solid $light-red;
+            height: 44px;
+        }
+    }
+
+    &__button {
+        height: 49px;
+        width: 100px;
+        border-radius: 0 25px 25px 0;
+        background-color: $light-red;
+        color: #fff;
+        border: none;
+        box-sizing: border-box;
+
+        &:hover {
+            background-color: #ea586b;
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+        &:focus {
+            outline: none;
+            color: $dark-bg;
+        }
+    }
+}

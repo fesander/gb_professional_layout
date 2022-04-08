@@ -1,0 +1,20 @@
+.input-item {
+    box-sizing: border-box;
+    padding: 0 17px;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: #B1B1B1;
+    // border: 1px solid #A4A4A4;
+    outline: 1px solid #A4A4A4;
+    border: none;
+
+    &:hover {
+        outline: 1px solid #b3d7ff;
+    }
+
+    &:focus {
+        outline: 1px solid #89d192;
+    }
+}

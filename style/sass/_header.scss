@@ -1,0 +1,75 @@
+@import "_variables.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+
+    &--desktop-size {
+        height: 75px;
+    }
+
+    &--collor {
+        background: $dark-bg;
+    }
+
+    &__icons-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &--size-for-two {
+            height: 38px;
+            width: 111px;
+        }
+
+        &--size-for-three {
+            height: 37px;
+            width: 168px;
+        }
+
+        &>a:hover .header-item {
+            fill: #635c5c;
+        }
+
+        &>a:focus {
+
+            outline: none;
+
+            .header-item {
+                fill: #635c5c;
+            }
+        }
+
+    }
+
+    .cart {
+        position: relative;
+
+        &__items {
+            display: none;
+            position: absolute;
+            height: 19px;
+            width: 19px;
+            border-radius: 50%;
+            background-color: $light-red;
+            top: -7px;
+            right: -8px;
+            font-size: 12px;
+            font-weight: 400;
+            color: #fff;
+
+            &--display {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    &__logo:hover {
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,42 @@
+@import "_variables.scss";
+
+.benefits {
+    background-color: $dark_bg;
+    height: 341px;
+    width: 1600px;
+    display: flex;
+    justify-content: center;
+
+    &__items {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #FBFBFB;
+
+        &--size {
+            height: 134px;
+            width: 360px;
+            padding: 0 20px;
+        }
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19.96px;
+        line-height: 24px;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+    }
+}

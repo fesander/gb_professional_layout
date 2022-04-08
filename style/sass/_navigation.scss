@@ -1,0 +1,96 @@
+@import "_variables.scss";
+
+main {
+    position: relative;
+}
+
+.nav {
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+    &--position {
+        top: 75px;
+        right: 0;
+    }
+
+    &--desktop {
+        height: 764px;
+        width: 232px;
+        background-color: #fff;
+        box-shadow: -12px 12px 85px rgba(0, 0, 0, 0.5);
+        padding: 16px 17px 16px 34px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    &--show {
+        display: block;
+    }
+
+    & a:hover {
+        color: $dark-bg;
+    }
+
+    & a:focus {
+        outline: none;
+        color: $dark-bg;
+    }
+
+    &__close {
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        background-image: url("../../img/cross.png");
+        background-size: auto;
+        border: none;
+        float: right;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:focus {
+            outline: none;
+            transform: scale(1.1);
+        }
+    }
+
+    &__title {
+        margin: 21px 0 0 0;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__list {
+        margin-top: 24px;
+    }
+
+    &__item {
+        margin: 0 0 20px 0;
+
+        &-title {
+            text-transform: uppercase;
+            color: $light-red;
+        }
+    }
+
+    &__sublist {
+        padding-left: 22px;
+    }
+
+    &__subitem {
+        margin: 11px 0 0 0;
+
+        &-title {
+            color: #6F6E6E;
+        }
+
+        &:first-child {
+            margin: 12px 0 0 0;
+        }
+    }
+}
