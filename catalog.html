@@ -90,7 +90,7 @@
         <section class="container-desktop page-title">
             <h2>New Arrivals</h2>
             <div class="page-title__links">
-                <a href="#" class="page-title__link">home</a>
+                <a href="index.html" class="page-title__link">home</a>
                 <p>/</p>
                 <a href="#" class="page-title__link">man</a>
                 <p>/</p>
@@ -99,6 +99,67 @@
         </section>
         <section class="container-desktop catalog">
             <h2 class="title-hidden">Catalog</h2>
+            <div class="catalog__filters">
+                <label class="catalog__filters-main">
+                    <button class="catalog__filter catalog__filter-main">Filter</button>
+                    <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="catalog__filters-main--icon"
+                            d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                            fill="black" />
+                    </svg>
+                    <ul class="catalog__filters-full">
+                        
+                        <li class="nav__item"><a class="nav__item-title catalog__filter_nav__item-title" href="#">category</a>
+                            <ul class="nav__sublist">
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">Accessories</a></li>
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">Bags</a></li>
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">Demin</a></li>
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">Hoodies &
+                                        Sweatshirts</a></li>
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">Jackets & Coats</a></li>
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">Polos</a></li>
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">Shirts</a></li>
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">Shoes</a></li>
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">Sweaters & Knits</a>
+                                </li>
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">T-Shirts</a></li>
+                                <li class="nav__subitem"><a class="nav__subitem-title" href="#">Tanks</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a class="nav__item-title catalog__filter_nav__item-title" href="#">brand</a></li>
+                        <li class="nav__item"><a class="nav__item-title catalog__filter_nav__item-title" href="#">Kids</a></li>
+                    </ul>
+                </label>
+                <div class="catalog__filters-sub">
+                    <div class="catalog__filter catalog__filter-sub">
+                        <button type="button">trending now</button>
+                        <ul class="catalog__filter-list">
+                            <li><input type="checkbox">XS</li>
+                            <li><input type="checkbox">S</li>
+                            <li><input type="checkbox">M</li>
+                            <li><input type="checkbox">L</li>
+                        </ul>
+                    </div>
+                    <div class="catalog__filter catalog__filter-sub">
+                        <button type="button">size</button>
+                        <ul class="catalog__filter-list catalog__filter-list--active">
+                            <li><input type="checkbox">XS</li>
+                            <li><input type="checkbox">S</li>
+                            <li><input type="checkbox">M</li>
+                            <li><input type="checkbox">L</li>
+                        </ul>
+                    </div>
+                    <div class="catalog__filter catalog__filter-sub">
+                        <button type="button">price</button>
+                        <ul class="catalog__filter-list">
+                            <li><input type="checkbox">XS</li>
+                            <li><input type="checkbox">S</li>
+                            <li><input type="checkbox">M</li>
+                            <li><input type="checkbox">L</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <ul class="catalog__list">
                 <li class="catalog-cart">
                     <div>
@@ -236,8 +297,16 @@
                     </div>
                 </li>
             </ul>
+            <div class="catalog__pages">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6....20</a>
+            </div>
         </section>
-       
+
     </main>
     <footer>
         <section class="subsctiption">

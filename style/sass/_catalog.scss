@@ -12,4 +12,176 @@
         width: 1140px;
         margin-bottom: 31.5px;
     }
+
+    &__filters {
+        width: 100%;
+        height: 132px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        &-main {
+            margin: 0 304px 0 16px;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            &--icon {
+                fill: #EF5B70;
+            }
+
+        }
+
+        &-sub {
+            position: relative;
+            display: flex;
+        }
+
+        &-full {
+            z-index: 1;
+            background-color: #fff;
+            width: 360px;
+            height: 531px;
+            padding: 46px 0 16px 16px;
+            box-sizing: border-box;
+            position: absolute;
+            top: -13px;
+            left: -16px;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+        }
+
+    }
+
+    &__filter {
+        background-color: #fff;
+        opacity: none;
+        border: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: #EF5B70;
+
+        &>button {
+            background-color: transparent;
+            opacity: none;
+            border: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 400;
+            color: #6F6E6E;
+
+            &:hover {
+                color: #EF5B70;
+            }
+        }
+
+        &-main {
+            font-weight: 600;
+            z-index: 2;
+
+            &+svg {
+                z-index: 2;
+            }
+        }
+
+        &-sub {
+            position: relative;
+            margin-left: 48px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 5px;
+                right: -12px;
+                top: 7px;
+                background-image: url("../../img/arrow_down.png");
+            }
+        }
+
+        &-list {
+            display: none;
+            position: absolute;
+            background-color: red;
+            height: 103px;
+            width: 79px;
+            top: 20px;
+            left: 0;
+            z-index: 1;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #6F6E6E;
+
+            &--active {
+                display: flex;
+            }
+
+        }
+
+        &_nav__item-title {
+            height: 37px;
+            width: 327px;
+            padding: 11.5px 11px;
+            border-left: 4px solid #EF5B70;
+            border-bottom: 1px solid #EBEBEB;
+            display: block;
+            box-sizing: border-box;
+        }
+    }
+
+    &__pages {
+        display: flex;
+        height: 43px;
+        width: 283px;
+        left: 645px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        border: 1px solid #EBEBEB;
+        margin-bottom: 96.5px;
+        box-sizing: border-box;
+
+
+        &>a {
+            color: #EBEBEB;
+            position: relative;
+
+            &:hover {
+                color: #989292;
+            }
+
+            &:first-child {
+                color: red;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 5px;
+                    right: 18px;
+                    top: 7px;
+                    background-image: url("../../img/arrow_down.png");
+                    transform: rotate(90deg);
+                }
+            }
+
+            &:last-child::after {
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 5px;
+                right: -18px;
+                top: 6px;
+                background-image: url("../../img/arrow_down.png");
+                transform: rotate(-90deg);
+            }
+
+        }
+    }
 }

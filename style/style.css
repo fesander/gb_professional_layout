@@ -1423,4 +1423,202 @@ main {
   width: 1140px;
   margin-bottom: 31.5px;
 }
+
+.catalog__filters {
+  width: 100%;
+  height: 132px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog__filters-main {
+  margin: 0 304px 0 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.catalog__filters-main--icon {
+  fill: #EF5B70;
+}
+
+.catalog__filters-sub {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__filters-full {
+  z-index: 1;
+  background-color: #fff;
+  width: 360px;
+  height: 531px;
+  padding: 46px 0 16px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: -13px;
+  left: -16px;
+  -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.catalog__filter {
+  background-color: #fff;
+  opacity: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #EF5B70;
+}
+
+.catalog__filter > button {
+  background-color: transparent;
+  opacity: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6F6E6E;
+}
+
+.catalog__filter > button:hover {
+  color: #EF5B70;
+}
+
+.catalog__filter-main {
+  font-weight: 600;
+  z-index: 2;
+}
+
+.catalog__filter-main + svg {
+  z-index: 2;
+}
+
+.catalog__filter-sub {
+  position: relative;
+  margin-left: 48px;
+}
+
+.catalog__filter-sub::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  right: -12px;
+  top: 7px;
+  background-image: url("../../img/arrow_down.png");
+}
+
+.catalog__filter-list {
+  display: none;
+  position: absolute;
+  background-color: red;
+  height: 103px;
+  width: 79px;
+  top: 20px;
+  left: 0;
+  z-index: 1;
+  -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #6F6E6E;
+}
+
+.catalog__filter-list--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog__filter_nav__item-title {
+  height: 37px;
+  width: 327px;
+  padding: 11.5px 11px;
+  border-left: 4px solid #EF5B70;
+  border-bottom: 1px solid #EBEBEB;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.catalog__pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 43px;
+  width: 283px;
+  left: 645px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+  border: 1px solid #EBEBEB;
+  margin-bottom: 96.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.catalog__pages > a {
+  color: #EBEBEB;
+  position: relative;
+}
+
+.catalog__pages > a:hover {
+  color: #989292;
+}
+
+.catalog__pages > a:first-child {
+  color: red;
+}
+
+.catalog__pages > a:first-child::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  right: 18px;
+  top: 7px;
+  background-image: url("../../img/arrow_down.png");
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.catalog__pages > a:last-child::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  right: -18px;
+  top: 6px;
+  background-image: url("../../img/arrow_down.png");
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
 /*# sourceMappingURL=style.css.map */
