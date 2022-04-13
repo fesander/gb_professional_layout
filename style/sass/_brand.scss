@@ -1,11 +1,14 @@
-@import "_variables.scss";
-
 .brand {
-    width: 1600px;
-    height: 764px;
+    max-width: 1600px;
+    max-height: 765px;
     background-color: $rose-bg;
     display: flex;
     align-items: center;
+
+    @include mobile {
+        height: 363px;
+        justify-content: center;
+    }
 
     &__description {
         text-transform: uppercase;
@@ -17,7 +20,7 @@
         box-sizing: border-box;
 
         &--size {
-            width: 405px;
+            max-width: 50%;
             padding-left: 16px;
             margin-left: 63px;
         }
@@ -30,6 +33,18 @@
             font-weight: 900;
             font-size: 48px;
             line-height: 58px;
+        }
+
+        @include mobile {
+            margin: 0;
+        }
+    }
+
+    &__img {
+        max-width: 50%;
+
+        @include mobile {
+            display: none;
         }
     }
 }

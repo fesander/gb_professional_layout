@@ -1,5 +1,3 @@
-@import "_variables.scss";
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -43,10 +41,21 @@
             }
         }
 
+        &--size-for-three {
+            @include mobile {
+                flex-direction: row-reverse;
+            }
+
+        }
+
     }
 
     .cart-icon {
         position: relative;
+
+        @include mobile {
+            display: none;
+        }
 
         &__items {
             display: none;
@@ -71,5 +80,12 @@
 
     &__logo:hover {
         transform: scale(1.1);
+    }
+
+    &__registration-icon {
+
+        @include mobile {
+            display: none;
+        }
     }
 }

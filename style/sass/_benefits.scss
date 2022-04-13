@@ -1,15 +1,14 @@
-@import "_variables.scss";
-
 .benefits {
     background-color: $dark_bg;
-    height: 341px;
-    width: 1600px;
+    max-width: 100%;
     display: flex;
     justify-content: center;
 
     &__items {
         display: flex;
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     &__item {

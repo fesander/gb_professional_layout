@@ -2,10 +2,11 @@
 
 .subsctiption {
     height: 448px;
-    width: 1600px;
+    max-width: 1600px;
     position: relative;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     background: url("../../img/form_bg.jpg"), rgba(244, 244, 244, 0.7);
     background-blend-mode: overlay;
 
@@ -20,6 +21,7 @@
     &__img {
         height: 96px;
         width: 96px;
+        margin-bottom: 30px;
     }
 
     &__blockquote {
