@@ -50,14 +50,14 @@
 
     }
 
-    .cart-icon {
+    &__cart-icon {
         position: relative;
 
         @include mobile {
             display: none;
         }
 
-        &__items {
+        &-items {
             display: none;
             position: absolute;
             height: 19px;
