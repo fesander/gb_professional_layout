@@ -1,0 +1,89 @@
+.catalog-cart {
+    height: 581px;
+    width: 360px;
+    background-color: #F8F8F8;
+    position: relative;
+    margin: 0 0 30px 0;
+
+    & img {
+        height: 420px;
+        width: 360px;
+
+    }
+
+    &:hover .catalog-cart__blackout {
+        display: flex;
+    }
+
+    &__info {
+        padding: 25px 18px 20px 18px;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        color: #000000;
+        text-align: left;
+        margin: 0 0 12px 0;
+        text-transform: uppercase;
+
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 17px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #5D5D5D;
+        margin-bottom: 18px;
+    }
+
+    &__price {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: $light-red;
+    }
+
+    &__blackout {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 420px;
+        width: 360px;
+        background: rgba(58, 56, 56, 0.86);
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__buy-link {
+        height: 43px;
+        width: 138px;
+        border: 1px solid #FFFFFF;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 43px;
+        letter-spacing: 0em;
+        padding-left: 48px;
+        box-sizing: border-box;
+        background: url("../../img/background_cart.png") no-repeat 10px 10px;
+
+        &:hover {
+            background-color: gray;
+        }
+
+        &:active {
+            transform: scale(0.95);
+            background-color: gray;
+        }
+
+    }
+}
