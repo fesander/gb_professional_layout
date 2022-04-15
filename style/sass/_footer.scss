@@ -1,21 +1,28 @@
-@import "_variables.scss";
-
-
 .footer {
-    height: 79px;
-    width: 1600px;
-    padding: 0 230px;
+    max-width: 1600px;
+    min-height: 80px;
+    padding: 0 10%;
     box-sizing: border-box;
     background-color: $dark-bg;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    // padding-top: 43px;
+    @include mobile {
+            flex-direction: column-reverse;
+            padding-top: 43px;
+        }
 
     &__copyright {
         font-size: 16px;
         font-weight: 400;
         line-height: 19px;
         color: #fff;
+
+        @include mobile {
+            margin: 40px 0 9px 0;
+        }
 
     }
 

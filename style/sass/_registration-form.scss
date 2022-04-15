@@ -4,15 +4,21 @@
     display: flex;
     justify-content: space-between;
 
+    @include mobile {
+        flex-direction: column;
+    }
+
     &__input-item {
         margin-bottom: 21px;
         height: 44px;
-        width: 360px;
+        width: 100%;
+        max-width: 360px;
     }
 
     &__form {
         display: flex;
         flex-direction: column;
+        margin-right: 22px;
     }
 
     &__name {
@@ -87,7 +93,7 @@
     }
 
     &__password-rules {
-        width: 360px;
+        max-width: 360px;
         font-size: 13px;
         font-weight: 300;
         line-height: 16px;
@@ -100,7 +106,7 @@
 
     &__submit {
         height: 50px;
-        width: 167px;
+        max-width: 167px;
         background-color: #F16D7F;
         color: #fff;
         border: none;
@@ -110,6 +116,7 @@
         padding-left: 29px;
         box-sizing: border-box;
         position: relative;
+        margin-bottom: 40px;
 
         &:after {
             content: '';
@@ -141,12 +148,17 @@
     &__perks {
         display: flex;
         flex-direction: column;
-        width: 652px;
+        max-width: 50%;
         font-family: Lato;
         font-style: normal;
         font-size: 24px;
         font-weight: 300;
         line-height: 29px;
+
+        @include mobile {
+            margin-bottom: 97px;
+            max-width: 100%;
+        }
 
         &-item:first-child {
             margin-top: 21px;

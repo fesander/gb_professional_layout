@@ -1,11 +1,11 @@
 .catalog-cart {
     height: 581px;
-    width: 360px;
+    max-width: 360px;
     background-color: #F8F8F8;
     position: relative;
     margin: 0 0 30px 0;
 
-    & img {
+    &__img {
         height: 420px;
         width: 360px;
 

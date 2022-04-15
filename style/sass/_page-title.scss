@@ -1,6 +1,6 @@
 .page-title {
     height: 148px;
-    width: 1600px;
+    max-width: 1600px;
     background-color: #F8F3F4;
     display: flex;
     align-items: center;
@@ -13,8 +13,23 @@
     display: flex;
     justify-content: space-between;
 
+    @include tablet {
+        justify-content: center;
+        flex-direction: column;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
     &>h2 {
         color: #F16D7F;
+
+        @include tablet {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 32px;
+        }
     }
 
     &__links {
