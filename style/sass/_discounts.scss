@@ -20,7 +20,7 @@
         flex-grow: 1;
 
         &:hover .discounts__blackout {
-            display: none;
+            animation: slide-out-fwd-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         }
 
         &:focus-within .discounts__blackout {
