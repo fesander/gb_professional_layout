@@ -206,6 +206,10 @@ input[type="radio"] {
   background: #222222;
 }
 
+.header-item {
+  fill: #E8E8E8;
+}
+
 .header__icons-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -732,7 +736,6 @@ main {
 }
 
 .catalog-cart {
-  height: 581px;
   max-width: 360px;
   background-color: #F8F8F8;
   position: relative;
@@ -740,8 +743,11 @@ main {
 }
 
 .catalog-cart__img {
-  height: 420px;
-  width: 360px;
+  width: 100%;
+}
+
+.catalog-cart__img-wrp {
+  position: relative;
 }
 
 .catalog-cart:hover .catalog-cart__blackout {
@@ -790,8 +796,8 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  height: 420px;
-  width: 360px;
+  height: 100%;
+  width: 100%;
   background: rgba(58, 56, 56, 0.86);
   display: none;
   -webkit-box-pack: center;
@@ -1080,6 +1086,10 @@ main {
   .footer__copyright {
     margin: 40px 0 9px 0;
   }
+}
+
+.footer .socials {
+  fill: #000;
 }
 
 .footer__socials {
@@ -1504,6 +1514,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 30px;
+  margin-bottom: 64px;
 }
 
 @media (max-width: 1200px) {
@@ -1809,27 +1820,32 @@ main {
 }
 
 .catalog__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   max-width: 1140px;
   margin-bottom: 31.5px;
+  grid-gap: 30px;
 }
 
 @media (max-width: 767px) {
   .catalog__list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .catalog__list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
 .catalog__container-fiters {
   width: 90%;
+  position: relative;
 }
 
 .catalog__filters {
@@ -1875,6 +1891,10 @@ main {
   fill: #EF5B70;
 }
 
+.catalog__filters-main:hover + .catalog__filters-full {
+  display: block;
+}
+
 .catalog__filters-sub {
   position: relative;
   display: -webkit-box;
@@ -1892,10 +1912,11 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: absolute;
-  top: -13px;
+  top: 35px;
   left: -16px;
   -webkit-box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
           box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
+  display: none;
 }
 
 .catalog__filter {
@@ -2009,9 +2030,9 @@ main {
           align-items: center;
   padding: 0 40px;
   border: 1px solid #EBEBEB;
-  margin-bottom: 96.5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0 auto 96px;
 }
 
 .catalog__pages-item {
