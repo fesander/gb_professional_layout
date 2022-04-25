@@ -13,6 +13,10 @@
         background: $dark-bg;
     }
 
+    &-item {
+        fill: #E8E8E8;
+    }
+
     &__icons-block {
         display: flex;
         justify-content: space-between;
